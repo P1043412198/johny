@@ -1,4 +1,12 @@
 require "lib.moonloader"
+# SA-Assistant command binder script
+
+This repository stores a single Lua script that powers the SA-Assistant command
+binder UI. The code below is unchanged from the original source, but the
+markdown structure makes it easier to read and share without losing any
+functionality.
+
+```lua
 local ffi = require "ffi"
 local imgui = require 'mimgui'
 local encoding = require 'encoding' 
@@ -1951,3 +1959,4 @@ end
 function samp.onSetPlayerDrunk(drunkLevel)
     return {1}
 end
+```
